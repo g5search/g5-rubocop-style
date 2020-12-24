@@ -11,8 +11,9 @@ AllCops:
     - "vendor/**/*"
     - "spec/fixtures/**/*"
     - "tmp/**/*"
-    - '**/templates/**/*'
-    - '*.gemspec'
+    - "**/templates/**/*"
+    - "*.gemspec"
+    - "bin/*"
   NewCops: enable
 
 Rails:
