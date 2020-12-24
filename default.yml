@@ -5,9 +5,9 @@ require:
 
 AllCops:
   Include:
-    - Rakefile
     - lib/**/*.rake
   Exclude:
+    - Rakefile
     - "vendor/**/*"
     - "spec/fixtures/**/*"
     - "tmp/**/*"
