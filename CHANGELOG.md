@@ -1,5 +1,5 @@
 # CHANGELOG
 
-## 1.0.0 (TBD)
+## 1.0.0
 ### Add
-* historically used rules across g5 apps
+* Historically used rules across g5 apps
