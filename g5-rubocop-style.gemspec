@@ -6,8 +6,8 @@ require "g5/rubocop_style/version"
 Gem::Specification.new do |spec|
   spec.name          = "g5-rubocop-style"
   spec.version       = G5::RubocopStyle::VERSION
-  spec.authors       = ['Jazo Madrid', 'G5']
-  spec.email         = ['jazo.madrid-c@getg5.com']
+  spec.authors       = ['Jazo Madrid', 'Levi Brown', 'G5']
+  spec.email         = ['jazo.madrid-c@getg5.com', 'levi.brown@getg5.com']
 
   spec.summary       = 'G5 rubocop style guides and shared style configs.'
   spec.homepage      = 'https://github.com/g5search/g5-rubocop-style'
@@ -39,6 +39,4 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rubocop-rspec"
   spec.add_dependency "rubocop-rails"
   spec.add_dependency "rubocop-performance"
-  spec.add_development_dependency "bundler", "~> 1.17"
-  spec.add_development_dependency "rake", "~> 13.0"
 end
