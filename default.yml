@@ -3,17 +3,20 @@ require:
   - rubocop-performance
   - rubocop-rspec
 
+inherit_mode:
+  merge:
+    - Include
+    - Exclude
+
 AllCops:
-  Include:
-    - lib/**/*.rake
   Exclude:
-    - Rakefile
     - "vendor/**/*"
     - "spec/fixtures/**/*"
     - "tmp/**/*"
+    - '.git/**/*'
     - "**/templates/**/*"
-    - "*.gemspec"
     - "bin/*"
+    - "db/migrate/*"
   NewCops: enable
 
 Rails:
