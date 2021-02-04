@@ -33,7 +33,7 @@ inherit_gem:
   g5-rubocop-style:
     - default.yml
 ```
-Or, if your repo requires codeclimate read the next secction
+Or, if your repo requires codeclimate read the next section
 
 Now, run:
 

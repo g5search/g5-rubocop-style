@@ -1,10 +1,9 @@
-# coding: utf-8
-lib = File.expand_path("../lib", __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "g5/rubocop_style/version"
+require 'g5/rubocop_style/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "g5-rubocop-style"
+  spec.name          = 'g5-rubocop-style'
   spec.version       = G5::RubocopStyle::VERSION
   spec.authors       = ['Jazo Madrid', 'Levi Brown', 'G5']
   spec.email         = ['jazo.madrid-c@getg5.com', 'levi.brown@getg5.com']
@@ -21,8 +20,8 @@ Gem::Specification.new do |spec|
     spec.metadata['source_code_uri'] = 'https://github.com/g5search/g5-rubocop-style'
     spec.metadata['changelog_uri'] = 'https://github.com/g5search/g5-rubocop-style/CHANGELOG.md'
   else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
+    raise 'RubyGems 2.0 or newer is required to protect against ' \
+      'public gem pushes.'
   end
 
   # Specify which files should be added to the gem when it is released.
@@ -31,12 +30,14 @@ Gem::Specification.new do |spec|
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
-  spec.bindir        = "exe"
+  spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = ['lib']
 
-  spec.add_dependency "rubocop", "~> 0.90.0"
-  spec.add_dependency "rubocop-rspec"
-  spec.add_dependency "rubocop-rails"
-  spec.add_dependency "rubocop-performance"
+  spec.add_dependency 'rubocop', '~> 0.90.0'
+  spec.add_dependency 'rubocop-performance'
+  spec.add_dependency 'rubocop-rails'
+  spec.add_dependency 'rubocop-rake'
+  spec.add_dependency 'rubocop-rspec'
+  spec.add_dependency 'rubocop-thread_safety'
 end
