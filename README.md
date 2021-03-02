@@ -8,7 +8,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :test, :development do
-  gem 'g5-rubocop-style'
+  gem 'g5-rubocop-style', '~> 1.2.0'
 end
 ```
 
@@ -57,7 +57,7 @@ If you need to use CodeClimate to help test your code you will need to use an ht
 ## .rubocop.yml
 
 inherit_from:
-  - https://raw.githubusercontent.com/g5search/g5-rubocop-style/v1.0.1/default.yml
+  - https://raw.githubusercontent.com/g5search/g5-rubocop-style/v1.2.0/default.yml
 ```
 
 For codeclimate to download the file you need to add these lines to the `.codeclimate.yml` file on the root of your project
@@ -69,16 +69,16 @@ version: "2"
 
 prepare:
   fetch:
-    - url: https://raw.githubusercontent.com/g5search/g5-rubocop-style/v1.0.1/default.yml
-      path: .rubocop-https---raw-githubusercontent-com-g5search-g5-rubocop-style-v1-0-1-default-yml
-
+    - url: https://raw.githubusercontent.com/g5search/g5-rubocop-style/v1.2.0/default.yml
+      path: .rubocop-https---raw-githubusercontent-com-g5search-g5-rubocop-style-v1-2-0-default-yml
+      
 plugins:
   rubocop:
     enabled: true
-    channel: "rubocop-0-90"
+    channel: "rubocop-1-91"
 ```
 
-Because of this rubocop will download a `.rubocop-https---raw-githubusercontent-com-g5search-g5-rubocop-style-v1-0-0-default-yml` to your project, so add it to your `.gitignore` file so it does not get deployed
+Because of this rubocop will download a `.rubocop-https---raw-githubusercontent-com-g5search-g5-rubocop-style-v1-2-0-default-yml` to your project, so add it to your `.gitignore` file so it does not get deployed
 
 ```
 ## .gitignore
@@ -86,7 +86,7 @@ Because of this rubocop will download a `.rubocop-https---raw-githubusercontent-
 .rubocop-http*
 ```
 
-As G5 releases new versions of this gem you will need to change the `v1.0.1` to the current version.
+As G5 releases new versions of this gem you will need to change the `v1.2.0` to the current version.
 
 #### inherit_from order
 
@@ -96,6 +96,6 @@ Rubocop takes into account the order of the inherit_from keys, so if you are add
 ## .rubocop.yml
 
 inherit_from:
-  - https://raw.githubusercontent.com/g5search/g5-rubocop-style/v1.0.1/default.yml
+  - https://raw.githubusercontent.com/g5search/g5-rubocop-style/v1.2.0/default.yml
   - .rubocop_todo.yml
 ```
