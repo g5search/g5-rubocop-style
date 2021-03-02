@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-gem 'rubocop', '~> 0.90.0'
+gem 'rubocop', '~> 1.9.1'
 gem 'rubocop-performance'
 gem 'rubocop-rails'
 gem 'rubocop-rake'
