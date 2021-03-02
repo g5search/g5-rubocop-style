@@ -24,9 +24,6 @@ AllCops:
 Rails:
   Enabled: true
 
-Bundler/OrderedGems:
-  Enabled: false
-
 Metrics/BlockLength:
   Exclude:
     - config/**/*
@@ -39,16 +36,3 @@ Lint/AmbiguousBlockAssociation:
 
 Style/Documentation:
   Enabled: false
-
-Layout/DotPosition:
-  EnforcedStyle: trailing
-
-Layout/EndOfLine:
-  EnforcedStyle: lf
-
-Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Rails/DynamicFindBy:
-  Exclude:
-    - "spec/models/*.rb"

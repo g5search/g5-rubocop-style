@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'g5/rubocop_style/version'
 
 module G5
