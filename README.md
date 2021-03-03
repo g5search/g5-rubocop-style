@@ -75,7 +75,7 @@ prepare:
 plugins:
   rubocop:
     enabled: true
-    channel: "rubocop-1-91"
+    channel: "rubocop-1-9-1"
 ```
 
 Because of this rubocop will download a `.rubocop-https---raw-githubusercontent-com-g5search-g5-rubocop-style-v1-2-0-default-yml` to your project, so add it to your `.gitignore` file so it does not get deployed
